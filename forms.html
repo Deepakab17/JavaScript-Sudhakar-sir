@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <h2>Register new products <button class="btn_primary">Register</button></h2>
+    <div class="modal fade" id="registerProduct">
+        <div class="modal_dialogue">
+            <div class="modal_content">
+                <div class="modal_header">
+                    <h2>Register new products</h2>
+                    <button class="btn_close" data-bs-dismiss="modal">DELETE</button>
+                </div>
+                <div class="modal_body">
+                    <dl>
+                        <dt>Name</dt>
+                        <dt><input type="text"id="textname" class="form-contorl"></dt>
+                        <dt>Price</dt>
+                        <dt><input type="text" id="textprice" class="form-contorl"></dt>
+                        <dt>shipped to</dt>
+                        <dd>
+                            <select  id="lstcities" class="form_select">
+                                <option>KOLKATA</option>
+                                <option>BENGALORE</option>
+                                <option>PATNA</option>
+                                <option>BHOPAL</option>
+                            </select>
+                        </dd>
+                        <dt>Stock</dt>
+                        <dd class="form_switch">
+                            <input id="optstock" type="checkbox" class="form_check_input"> AVAILABLE
+                        </dd>
+                    </dl>
+
+                </div>
+                <div class="modal_footer">
+                    <button class="btn_primary" data-bs-dismiss="modal" onclick="SubmitClick()">SUBMIT</button>
+                    <button class="btn_danger" data-bs-dismiss="modal">CANCEL</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="forms.js"></script>
+</body>
+</html>
